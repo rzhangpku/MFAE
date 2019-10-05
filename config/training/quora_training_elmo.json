@@ -1,0 +1,19 @@
+{
+    "train_data": "../../data/preprocessed/quora/elmo_train_data.pkl",
+    "valid_data": "../../data/preprocessed/quora/elmo_dev_data.pkl",
+    "test_data": "../../data/preprocessed/quora/elmo_test_data.pkl",
+    "options_file": "../../config/preprocessing/elmo_original_5.5b.json",
+    "weight_file": "../../data/embeddings/elmo_original_5.5b.hdf5",
+    "target_dir": "../../data/checkpoints/quora/elmo",
+
+    "embedding_size": 1024,
+    "hidden_size": 512,
+    "dropout": 0.5,
+    "num_classes": 2,
+
+    "epochs": 64,
+    "batch_size": 64,
+    "lr": 0.0004,
+    "patience": 5,
+    "max_gradient_norm": 10.0
+}

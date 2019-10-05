@@ -1,0 +1,7 @@
+
+
+    "options_file": "../../config/preprocessing/elmo_original_5.5b.json",
+    "weight_file": "../../data/embeddings/elmo_original_5.5b.hdf5",
+
+    "options_file": "../../config/preprocessing/elmo_medium.json",
+    "weight_file": "../../data/embeddings/elmo_medium.hdf5",

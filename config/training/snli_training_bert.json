@@ -1,0 +1,18 @@
+{
+    "train_data": "../../data/preprocessed/SNLI/bert_train_data.pkl",
+    "valid_data": "../../data/preprocessed/SNLI/bert_dev_data.pkl",
+    "test_data": "../../data/preprocessed/SNLI/bert_test_data.pkl",
+
+    "target_dir": "../../data/checkpoints/SNLI/bert",
+    
+    "embedding_size": 1024,
+    "hidden_size": 512,
+    "dropout": 0.5,
+    "num_classes": 3,
+
+    "epochs": 64,
+    "batch_size": 64,
+    "lr": 0.0004,
+    "patience": 5,
+    "max_gradient_norm": 10.0
+}
