@@ -253,7 +253,7 @@ if __name__ == "__main__":
     script_dir = script_dir + '/scripts/training'
 
     parser.add_argument("--checkpoint",
-                        default=None,#os.path.dirname(os.path.realpath(__file__)) + '/data/checkpoints/quora/bert/' +"esim_{}.pth.tar".format(1),
+                        default=None,#os.path.dirname(os.path.realpath(__file__)) + '/data/checkpoints/quora/bert/' +"esim_{}.pth.tar".format(2),
                         help="Path to a checkpoint file to resume training")
     args = parser.parse_args()
 

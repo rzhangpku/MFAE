@@ -41,6 +41,7 @@ def train(model,
     running_loss = 0.0
     correct_preds = 0
     total_num = 0
+    sub_len = 0
 
     bc = BertClient()
     batch = dataloader
@@ -48,6 +49,7 @@ def train(model,
     for batch_index in tqdm_batch_iterator:
         batch_start = time.time()
 
+        # try:
         # Move input and output data to the GPU if it is used.
         premises = torch.tensor(bc.encode(batch["premises"][batch_index])).to(device)
         hypotheses = torch.tensor(bc.encode(batch["hypotheses"][batch_index])).to(device)
@@ -71,9 +73,12 @@ def train(model,
                       .format(batch_time_avg/(batch_index+1),
                               running_loss/(batch_index+1))
         tqdm_batch_iterator.set_description(description)
+        # except:
+        #     sub_len += 1
+        #     print('encoding error!')
 
     epoch_time = time.time() - epoch_start
-    epoch_loss = running_loss / len(dataloader['labels'])
+    epoch_loss = running_loss / (len(dataloader['labels']) -sub_len)
     epoch_accuracy = correct_preds / total_num
 
     return epoch_time, epoch_loss, epoch_accuracy
@@ -106,6 +111,7 @@ def validate(model, dataloader, criterion):
     running_loss = 0.0
     running_accuracy = 0.0
     total_num = 0
+    sub_len = 0
 
     bc = BertClient()
     batch = dataloader
@@ -113,6 +119,7 @@ def validate(model, dataloader, criterion):
     with torch.no_grad():
         for batch_index in range(len(dataloader['labels'])):
             # Move input and output data to the GPU if one is used.
+            # try:
             premises = torch.tensor(bc.encode(batch["premises"][batch_index])).to(device)
             hypotheses = torch.tensor(bc.encode(batch["hypotheses"][batch_index])).to(device)
             labels = torch.tensor(batch["labels"][batch_index]).to(device)
@@ -123,9 +130,12 @@ def validate(model, dataloader, criterion):
             running_loss += loss.item()
             running_accuracy += correct_predictions(probs, labels)
             total_num += len(labels)
+            # except:
+            #     sub_len += 1
+            #     print('encoding error!')
 
     epoch_time = time.time() - epoch_start
-    epoch_loss = running_loss / len(dataloader['labels'])
+    epoch_loss = running_loss / (len(dataloader['labels']) - sub_len)
     epoch_accuracy = running_accuracy / total_num
 
     return epoch_time, epoch_loss, epoch_accuracy
