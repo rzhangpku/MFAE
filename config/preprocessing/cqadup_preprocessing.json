@@ -1,0 +1,14 @@
+{
+    "data_dir": "../../data/dataset/cqadupstack_pre",
+    "embeddings_file": "../../data/embeddings/glove.840B.300d.txt",
+    "target_dir": "../../data/preprocessed/cqadup",
+
+    "lowercase": true,
+    "ignore_punctuation": false,
+    "num_words": null,
+    "stopwords": [],
+    "labeldict": {"0": 0,
+                  "1": 1},
+    "bos": "_BOS_",
+    "eos": "_EOS_"
+}
