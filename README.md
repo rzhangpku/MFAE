@@ -1,4 +1,4 @@
-# What Dose Questions Ask Exactly? AMAE: Attention Model withMulti-Fusion Asking Emphasis for Duplicate Question Identification
+# What Dose Questions Ask Exactly?  MFAE: Duplicate Question Identificationwith Multi-Fusion Asking Emphasis
 
 Our code can run on four Datasets: 
 

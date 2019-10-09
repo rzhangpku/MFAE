@@ -8,7 +8,7 @@ import pickle
 import argparse
 
 from nltk import word_tokenize
-from amae.data import Preprocessor
+from mfae.data import Preprocessor
 
 
 def jsonl_to_txt(input_file, output_file):

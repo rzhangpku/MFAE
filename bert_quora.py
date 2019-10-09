@@ -4,8 +4,8 @@ Train the ESIM model on the preprocessed SNLI dataset.
 # Aurelien Coet, 2018.
 
 from utils_bert import train, validate
-from amae.model_bert import ESIM
-# from amae.model_bert_transformer import ESIM
+from mfae.model_bert import ESIM
+# from mfae.model_bert_transformer import ESIM
 import torch.nn as nn
 import matplotlib.pyplot as plt
 import os

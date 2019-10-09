@@ -7,7 +7,7 @@ import argparse
 import fnmatch
 import json
 
-from amae.data import Preprocessor
+from mfae.data import Preprocessor
 
 
 def preprocess_quora_data(inputdir,

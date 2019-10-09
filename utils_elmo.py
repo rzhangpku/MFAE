@@ -9,7 +9,7 @@ import torch.nn as nn
 import numpy as np
 
 from tqdm import tqdm
-from amae.utils import correct_predictions
+from mfae.utils import correct_predictions
 from allennlp.modules.elmo import batch_to_ids
 
 def train(model,

@@ -4,8 +4,8 @@ Train the ESIM model on the preprocessed SNLI dataset.
 # Aurelien Coet, 2018.
 
 from utils_elmo import train, validate
-from amae.model_elmo2 import ESIM
-from amae.data import ElmoDataset
+from mfae.model_elmo2 import ESIM
+from mfae.data import ElmoDataset
 import torch.nn as nn
 import matplotlib.pyplot as plt
 import os
