@@ -4,7 +4,7 @@
 This repository includes the source code of the paper "What Do Questions Exactly Ask? MFAE: Duplicate Question Identification with Multi-Fusion Asking Emphasis". Please cite our paper when you use this program! 😍
 
 ## Model overview
-
+![Overview of MFAE](https://i.loli.net/2019/10/12/eSbyd2jfRtZnIQA.png)
 
 ## Requirements
 python
