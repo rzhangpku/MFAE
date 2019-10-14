@@ -9,7 +9,7 @@ This repository includes the source code of the paper "What Do Questions Exactly
 ## Requirements
 python
 
-pytorch
+pip install requirements.txt
 
 ## Datasets
 Our code can run on four Datasets:
@@ -27,7 +27,8 @@ After download the dataset, you can run process_quora_bert.py, process_quora.py(
 For convenience, you can simply run run.sh to train the model based on BERT service (https://github.com/hanxiao/bert-as-service) on every dataset one by one.
 You can also select the specific file(bert_quora.py, bert_cqadup.py,
 bert_mnli.py, bert_snli.py) to train AMAE on BERT or (train_quora_elmo.py, train_mnli_elmo.py, train_snli_elmo.py) on Elmo.
-## Testing
+
+After each training epoch, we will test on the valid/test set. You can select the train/valid/test process according to your needs.
 
 ## Reporting issues
 Please let me know, if you encounter any problems.
