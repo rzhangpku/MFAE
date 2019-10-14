@@ -5,7 +5,7 @@ Definition of the ESIM model.
 
 import torch
 import torch.nn as nn
-from .layers2 import RNNDropout, Seq2SeqEncoder, SoftmaxAttention, LengthEncoder
+from .layers_new import RNNDropout, Seq2SeqEncoder, SoftmaxAttention, LengthEncoder
 from .utils import replace_masked
 
 class ESIM(nn.Module):

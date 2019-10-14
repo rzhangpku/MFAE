@@ -409,14 +409,15 @@ class SoftmaxAttention(nn.Module):
                                                attended_hypotheses4, attended_hypotheses5, attended_hypotheses6,
                                                attended_hypotheses7, attended_hypotheses8], dim=-1))
 
-        enhanced_premises = torch.cat([premise_batch, attended_premises, self_premises,
-                                       premise_batch - attended_premises, premise_batch * attended_premises,
-                                       premise_all
+        enhanced_premises = torch.cat([premise_batch, attended_premises, self_premises, premise_all,
+                                       premise_batch * attended_premises, premise_batch - attended_premises
+                                       # self_premises - attended_premises, self_premises * attended_premises,
                                        ],
                                       dim=-1)
-        enhanced_hypotheses = torch.cat([hypothesis_batch, attended_hypotheses, self_hypotheses,
-                                         hypothesis_batch - attended_hypotheses, hypothesis_batch * attended_hypotheses,
-                                         hypotheses_all
+
+        enhanced_hypotheses = torch.cat([hypothesis_batch, attended_hypotheses, self_hypotheses, hypotheses_all,
+                                         hypothesis_batch * attended_hypotheses, hypothesis_batch - attended_hypotheses
+                                         # self_hypotheses - attended_hypotheses, self_hypotheses * attended_hypotheses,
                                          ],
                                         dim=-1)
         return enhanced_premises, enhanced_hypotheses

@@ -11,5 +11,5 @@ process_mnli_bert.py et. in scripts/preprocessing to preprocess the data.
 
 For convenience, you can simply run run.sh to train the model based on BERT service (https://github.com/hanxiao/bert-as-service) on every dataset one by one.
 You can also select the specific file(bert_quora.py, bert_cqadup.py,
-bert_mnli.py, bert_snli.py) to train AMAE on BERT or (train_quora_elmo.py, train_mnli_elmo.py, train_snli_elmo.py) on Elmo.
+bert_mnli.py, bert_snli.py) to train AMAE on BERT or (elmo_quora.py, elmo_mnli.py, elmo_snli.py) on Elmo.
 
