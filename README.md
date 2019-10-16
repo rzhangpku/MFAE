@@ -9,7 +9,9 @@ This repository includes the source code of the paper "What Do Questions Exactly
 ## Requirements
 python3
 
+```
 pip install -r requirements.txt
+```
 
 ## Datasets
 Our code can run on four datasets.
