@@ -24,8 +24,6 @@ Our code can run on four datasets.
 1. SNLI
 2. MultiNLI
 
-## Data format
-
 ## Preprocess the data
 After downloading the dataset, you can preprocess the data.
 
@@ -48,7 +46,7 @@ python preprocess_mnli.py
 
 ## Train
 ### BERT service
-If you want to train models with BERT word embedding, please use the [bert-as-service](https://github.com/hanxiao/bert-as-service), then run the following scripts.
+If you want to train models with BERT word embedding, please use the [bert-as-service](https://github.com/hanxiao/bert-as-service), and then run the following scripts.
 
 ### Train all models
 ```
