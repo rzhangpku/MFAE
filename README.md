@@ -29,14 +29,6 @@ Our code can run on four datasets.
 ## Preprocess the data
 After downloading the dataset, you can preprocess the data.
 
-### Preprocess the data for ELMo
-```
-cd scripts/preprocessing
-python process_quora.py
-python preprocess_snli.py
-python preprocess_mnli.py
-```
-
 ### Preprocess the data for BERT
 ```
 cd scripts/preprocessing
@@ -46,13 +38,40 @@ python process_mnli_bert.py
 python preprocess_cqadup_bert.py
 ```
 
-## Train
-For convenience, you can simply run run.sh to train the model based on BERT service (https://github.com/hanxiao/bert-as-service) on every dataset one by one.
-You can also select the specific file(bert_quora.py, bert_cqadup.py,
-bert_mnli.py, bert_snli.py) to train AMAE on BERT or (train_quora_elmo.py, train_mnli_elmo.py, train_snli_elmo.py) on Elmo.
+### Preprocess the data for ELMo
+```
+cd scripts/preprocessing
+python process_quora.py
+python preprocess_snli.py
+python preprocess_mnli.py
+```
 
-After each training epoch, we will test on the valid/test set. You can select the train/valid/test process according to your needs.
+## Train
+### BERT service
+If you want to train models with BERT word embedding, please use the [bert-as-service](https://github.com/hanxiao/bert-as-service), then run the following scripts.
+
+### Train all models
+```
+sh -x run.sh
+```
+
+### Train with BERT
+```
+python bert_quora.py >> log/quora/quora_bert.log
+python bert_snli.py >> log/snli/snli_bert.log
+python bert_mnli.py >> log/mnli/mnli_bert.log
+python bert_cqadup.py >> log/cqadup/cqadup_bert.log
+```
+
+### Train with ElMo
+```
+python train_quora_elmo.py >> log/quora/quora_elmo.log
+python train_mnli_elmo.py >> log/snli/snli_elmo.log
+python train_snli_elmo.py >> log/mnli/mnli_elmo.log
+```
+
 ## Test
+After each training epoch, we will test on the valid/test set. You can select the train/valid/test process according to your needs.
 
 ## Reporting issues
 Please let me know, if you encounter any problems.
