@@ -9,9 +9,8 @@ This repository includes the source code of the paper "What Do Questions Exactly
 ## Requirements
 python
 
-pytorch
+pip install requirements.txt
 
-加入requirement.txt文件，生成一个再加入仓库中
 ## Datasets
 Our code can run on four datasets.
 
@@ -33,6 +32,8 @@ For convenience, you can simply run run.sh to train the model based on BERT serv
 You can also select the specific file(bert_quora.py, bert_cqadup.py,
 bert_mnli.py, bert_snli.py) to train AMAE on BERT or (train_quora_elmo.py, train_mnli_elmo.py, train_snli_elmo.py) on Elmo.
 ## Test
+
+After each training epoch, we will test on the valid/test set. You can select the train/valid/test process according to your needs.
 
 ## Reporting issues
 Please let me know, if you encounter any problems.
