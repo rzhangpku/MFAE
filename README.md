@@ -27,14 +27,22 @@ Natural language inference datasets:
 ## Preprocess the data
 After downloading the dataset, you can preprocess the data.
 
+### Preprocess the data for ELMo
+```
+cd scripts/preprocessing
+python process_quora.py
+python preprocess_snli.py
+python preprocess_mnli.py
+```
+
+### Preprocess the data for BERT
 ```
 cd scripts/preprocessing
 python process_quora_bert.py
-python process_quora.py
+python preprocess_snli_bert.py
 python process_mnli_bert.py
+python preprocess_cqadup_bert.py
 ```
-
-process_quora_bert.py, process_quora.py(elmo), process_mnli_bert.py et. in scripts/preprocessing to preprocess the data.
 
 ## Train
 For convenience, you can simply run run.sh to train the model based on BERT service (https://github.com/hanxiao/bert-as-service) on every dataset one by one.
