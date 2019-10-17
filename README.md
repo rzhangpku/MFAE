@@ -69,7 +69,7 @@ python train_snli_elmo.py >> log/mnli/mnli_elmo.log
 ```
 
 ## Test
-After the models have been trained, we can test the model.
+After the models have been trained, you can test the model.
 
 ```
 python test_bert_quora.py
