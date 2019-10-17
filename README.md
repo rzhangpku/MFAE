@@ -78,7 +78,7 @@ python test_bert_snli.py
 python test_bert_mnli.py
 ```
 
-## Reporting issues
+## Report issues
 Please let us know, if you encounter any problems.
 
 The contact email is rzhangpku@pku.edu.cn
