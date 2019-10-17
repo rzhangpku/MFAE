@@ -45,7 +45,7 @@ python preprocess_mnli.py
 ```
 
 ## Train
-### BERT service
+### BERT as service
 If you want to train models with BERT word embedding, please use the [bert-as-service](https://github.com/hanxiao/bert-as-service), and then run the following scripts.
 
 ### Train all models
