@@ -79,7 +79,7 @@ python test_bert_mnli.py
 ```
 
 ## Reporting issues
-Please let me know, if you encounter any problems.
+Please let us know, if you encounter any problems.
 
 The contact email is rzhangpku@pku.edu.cn
 
