@@ -25,7 +25,7 @@ Our code can run on four datasets.
 2. MultiNLI
 
 ## Preprocess the data
-After downloading the dataset, you can preprocess the data.
+After the datasets have been downloaded, you can preprocess the data.
 
 ### Preprocess the data for BERT
 ```
@@ -69,7 +69,14 @@ python train_snli_elmo.py >> log/mnli/mnli_elmo.log
 ```
 
 ## Test
-After each training epoch, we will test on the valid/test set. You can select the train/valid/test process according to your needs.
+After the models have been trained, we can test the model.
+
+```
+python test_bert_quora.py
+python test_bert_snli.py
+python test_bert_mnli.py
+python test_bert_cqadup.py
+```
 
 ## Reporting issues
 Please let me know, if you encounter any problems.
