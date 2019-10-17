@@ -31,9 +31,9 @@ After the datasets have been downloaded, you can preprocess the data.
 ```
 cd scripts/preprocessing
 python process_quora_bert.py
+python preprocess_cqadup_bert.py
 python preprocess_snli_bert.py
 python process_mnli_bert.py
-python preprocess_cqadup_bert.py
 ```
 
 ### Preprocess the data for ELMo
@@ -56,9 +56,9 @@ sh -x run.sh
 ### Train with BERT
 ```
 python bert_quora.py >> log/quora/quora_bert.log
+python bert_cqadup.py >> log/cqadup/cqadup_bert.log
 python bert_snli.py >> log/snli/snli_bert.log
 python bert_mnli.py >> log/mnli/mnli_bert.log
-python bert_cqadup.py >> log/cqadup/cqadup_bert.log
 ```
 
 ### Train with ElMo
@@ -73,9 +73,9 @@ After the models have been trained, you can test the models.
 
 ```
 python test_bert_quora.py
+python test_bert_cqadup.py
 python test_bert_snli.py
 python test_bert_mnli.py
-python test_bert_cqadup.py
 ```
 
 ## Reporting issues
