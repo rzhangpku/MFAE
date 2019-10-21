@@ -64,8 +64,8 @@ python bert_mnli.py >> log/mnli/mnli_bert.log
 ### Train with ELMo
 ```
 python train_quora_elmo.py >> log/quora/quora_elmo.log
-python train_snli_elmo.py >> log/mnli/mnli_elmo.log
-python train_mnli_elmo.py >> log/snli/snli_elmo.log
+python train_snli_elmo.py >> log/snli/snli_elmo.log
+python train_mnli_elmo.py >> log/mnli/mnli_elmo.log
 ```
 
 ## Test
