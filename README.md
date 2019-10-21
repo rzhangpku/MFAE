@@ -61,7 +61,7 @@ python bert_snli.py >> log/snli/snli_bert.log
 python bert_mnli.py >> log/mnli/mnli_bert.log
 ```
 
-### Train with ElMo
+### Train with ELMo
 ```
 python train_quora_elmo.py >> log/quora/quora_elmo.log
 python train_snli_elmo.py >> log/mnli/mnli_elmo.log
@@ -80,7 +80,7 @@ python test_bert_snli.py
 python test_bert_mnli.py
 ```
 
-### Test the models with ElMo
+### Test the models with ELMo
 
 ```
 python test_elmo_quora.py
