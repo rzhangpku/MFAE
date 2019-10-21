@@ -71,11 +71,21 @@ python train_mnli_elmo.py >> log/snli/snli_elmo.log
 ## Test
 After the models have been trained, you can test the models.
 
+### Test the models with BERT
+
 ```
 python test_bert_quora.py
 python test_bert_cqadup.py
 python test_bert_snli.py
 python test_bert_mnli.py
+```
+
+### Test the models with ElMo
+
+```
+python test_elmo_quora.py
+python test_elmo_snli.py
+python test_elmo_mnli.py
 ```
 
 ## Report issues
