@@ -1,7 +1,17 @@
 # What Do Questions Exactly Ask? MFAE: Duplicate Question Identification with Multi-Fusion Asking Emphasis
 
 ## Description
-This repository includes the source code of the paper "What Do Questions Exactly Ask? MFAE: Duplicate Question Identification with Multi-Fusion Asking Emphasis". Please cite our paper when you use this program! 😍
+This repository includes the source code of the paper "What Do Questions Exactly Ask? MFAE: Duplicate Question Identification with Multi-Fusion Asking Emphasis". Please cite our paper when you use this program! 😍 This paper has been accepted to the conference "SIAM International Conference on Data Mining (SDM20)".
+
+```
+@inproceedings{zhang2020what,
+  title={What Do Questions Exactly Ask? MFAE: Duplicate Question Identification with Multi-Fusion Asking Emphasis},
+  author={Zhang, Rong and Zhou, Qifei and Wu, Bo and Li, Weiping and Mo, Tong},
+  booktitle={Proceedings of the 2020 SIAM International Conference on Data Mining},
+  year={2020},
+  organization={SIAM}
+}
+```
 
 ## Model overview
 ![](https://i.loli.net/2019/10/16/24uzEvdC8OFkSnX.png)
