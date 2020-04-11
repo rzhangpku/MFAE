@@ -1,4 +1,5 @@
 # What Do Questions Exactly Ask? MFAE: Duplicate Question Identification with Multi-Fusion Asking Emphasis
+# SDM 2020
 
 ## Description
 This repository includes the source code of the paper "What Do Questions Exactly Ask? MFAE: Duplicate Question Identification with Multi-Fusion Asking Emphasis". Please cite our paper when you use this program! 😍 This paper has been accepted to the conference "SIAM International Conference on Data Mining (SDM20)".
@@ -26,18 +27,18 @@ pip install -r requirements.txt
 ## Datasets
 Our code can run on four datasets.
 
-### Duplicate question identification datasets
+### Duplicate Question Identification Datasets (DQI)
 * Quora Question Pairs
 * CQADupStack
 
-### Natural language inference datasets
+### Natural Language Inference Datasets (NLI)
 * SNLI
 * MultiNLI
 
-## Preprocess the data
+## Data Preprocessing
 After the datasets have been downloaded, you can preprocess the data.
 
-### Preprocess the data for BERT
+### Preprocess the data by BERT
 ```
 cd scripts/preprocessing
 python process_quora_bert.py
@@ -46,7 +47,7 @@ python preprocess_snli_bert.py
 python process_mnli_bert.py
 ```
 
-### Preprocess the data for ELMo
+### Preprocess the data by ELMo
 ```
 cd scripts/preprocessing
 python process_quora.py
@@ -54,7 +55,7 @@ python preprocess_snli.py
 python preprocess_mnli.py
 ```
 
-## Train
+## Training
 ### BERT as service
 If you want to train models with BERT word embedding, please use the [bert-as-service](https://github.com/hanxiao/bert-as-service), and then run the following scripts.
 
@@ -78,10 +79,10 @@ python train_snli_elmo.py >> log/snli/snli_elmo.log
 python train_mnli_elmo.py >> log/mnli/mnli_elmo.log
 ```
 
-## Test
+## Testing
 After the models have been trained, you can test the models.
 
-### Test the models with BERT
+### Test the models with BERT backbone
 
 ```
 python test_bert_quora.py
@@ -90,7 +91,7 @@ python test_bert_snli.py
 python test_bert_mnli.py
 ```
 
-### Test the models with ELMo
+### Test the models with ELMo backbone
 
 ```
 python test_elmo_quora.py
