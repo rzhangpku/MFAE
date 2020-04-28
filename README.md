@@ -16,18 +16,8 @@ This repository includes the source code of the paper "What Do Questions Exactly
 
 ### Model overview
 <div align=center>
-<img src="https://i.loli.net/2019/10/16/24uzEvdC8OFkSnX.png" width="33%" height="100%" />
-</div>
-
-<div align=center>
 <img src="https://i.loli.net/2019/10/16/24uzEvdC8OFkSnX.png" width="50%" height="100%" />
 </div>
-
-<div align=center>
-<img src="https://i.loli.net/2019/10/16/24uzEvdC8OFkSnX.png" width="80%" height="100%" />
-</div>
-
-![](https://i.loli.net/2019/10/16/24uzEvdC8OFkSnX.png)
 
 ### Requirements
 python3
