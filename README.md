@@ -2,7 +2,7 @@
 ## SDM 2020
 
 ### Description
-This repository includes the source code of the paper "What Do Questions Exactly Ask? MFAE: Duplicate Question Identification with Multi-Fusion Asking Emphasis". Please cite our paper when you use this program! 😍 This paper has been accepted to the conference "SIAM International Conference on Data Mining (SDM20)".
+This repository includes the source code of the paper "What Do Questions Exactly Ask? MFAE: Duplicate Question Identification with Multi-Fusion Asking Emphasis". Please cite our paper when you use this program! 😍 This paper has been accepted to the conference "SIAM International Conference on Data Mining (SDM20)". This paper can be downloaded [here](https://epubs.siam.org/doi/pdf/10.1137/1.9781611976236.26).
 
 ```
 @inproceedings{zhang2020what,
@@ -15,6 +15,18 @@ This repository includes the source code of the paper "What Do Questions Exactly
 ```
 
 ### Model overview
+<div align=center>
+<img src="https://i.loli.net/2019/10/16/24uzEvdC8OFkSnX.png" width="33%" height="100%" />
+</div>
+
+<div align=center>
+<img src="https://i.loli.net/2019/10/16/24uzEvdC8OFkSnX.png" width="50%" height="100%" />
+</div>
+
+<div align=center>
+<img src="https://i.loli.net/2019/10/16/24uzEvdC8OFkSnX.png" width="80%" height="100%" />
+</div>
+
 ![](https://i.loli.net/2019/10/16/24uzEvdC8OFkSnX.png)
 
 ### Requirements
