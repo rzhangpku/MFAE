@@ -5,10 +5,11 @@
 This repository includes the source code of the paper "What Do Questions Exactly Ask? MFAE: Duplicate Question Identification with Multi-Fusion Asking Emphasis". Please cite our paper when you use this program! 😍 This paper has been accepted to the conference "SIAM International Conference on Data Mining (SDM20)". This paper can be downloaded [here](https://epubs.siam.org/doi/pdf/10.1137/1.9781611976236.26).
 
 ```
-@inproceedings{zhang2020what,
+@inproceedings{zhang2020questions,
   title={What Do Questions Exactly Ask? MFAE: Duplicate Question Identification with Multi-Fusion Asking Emphasis},
-  author={Zhang, Rong and Zhou, Qifei and Wu, Bo and Li, Weiping and Mo, Tong},
+  author={Zhang, Rong and Zhou, Qifei and WA, Bo and Li, Weiping and Mo, Tong},
   booktitle={Proceedings of the 2020 SIAM International Conference on Data Mining},
+  pages={226--234},
   year={2020},
   organization={SIAM}
 }
