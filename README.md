@@ -1,8 +1,8 @@
 ## What Do Questions Exactly Ask? MFAE: Duplicate Question Identification with Multi-Fusion Asking Emphasis
-## SDM 2020
+### Paper Accepted by SDM 2020
 
 ### Description
-This repository includes the source code of the paper "What Do Questions Exactly Ask? MFAE: Duplicate Question Identification with Multi-Fusion Asking Emphasis". Please cite our paper when you use this program! 😍 This paper has been accepted to the conference "SIAM International Conference on Data Mining (SDM20)". This paper can be downloaded [here](https://epubs.siam.org/doi/pdf/10.1137/1.9781611976236.26).
+This repository includes the source code of the paper "What Do Questions Exactly Ask? MFAE: Duplicate Question Identification with Multi-Fusion Asking Emphasis". Please cite our paper when you use this program! 😍 This paper has been accepted to the conference "SIAM International Conference on Data Mining (SDM20)". The paper can be downloaded [here](https://epubs.siam.org/doi/pdf/10.1137/1.9781611976236.26).
 
 ```
 @inproceedings{zhang2020questions,
@@ -15,7 +15,7 @@ This repository includes the source code of the paper "What Do Questions Exactly
 }
 ```
 
-### Model overview
+### Model Overview
 <div align=center>
 <img src="https://i.loli.net/2019/10/16/24uzEvdC8OFkSnX.png" width="50%" height="100%" />
 </div>
@@ -27,14 +27,14 @@ python3
 pip install -r requirements.txt
 ```
 
-## Datasets
-Our code can run on four datasets.
+### Datasets
+The codes support four datasets for Duplicate Sentence Identification.
 
-### Duplicate Question Identification Datasets (DQI)
+#### Duplicate Question Identification Datasets (DQI)
 * Quora Question Pairs
 * CQADupStack
 
-### Natural Language Inference Datasets (NLI)
+#### Natural Language Inference Datasets (NLI)
 * SNLI
 * MultiNLI
 
@@ -102,7 +102,7 @@ python test_elmo_snli.py
 python test_elmo_mnli.py
 ```
 
-### Report issues
+### Report Issues
 Please let us know, if you encounter any problems.
 
 The contact email is rzhangpku@pku.edu.cn
