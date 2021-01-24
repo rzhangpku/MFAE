@@ -3,7 +3,7 @@ scipy==1.2.0
 tqdm==4.32.2
 matplotlib==3.0.3
 allennlp==0.8.5
-nltk==3.3
+nltk==3.4.5
 wget==3.2
 torch==1.2.0
 numpy==1.17.2
